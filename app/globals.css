@@ -6,6 +6,14 @@
   --bg-page: #f1efda;
   --primary: #f8e631;
   --primary-hover: #f8e631ba;
+  --tab-inactive: #c8b71b;
+  --tab-active: #7b6f00;
+  --tab-hover: #7b6f00ba;
+  --text-details: #909090;
+
+  --bg-card: #e4d33a;
+  --bg-btn-card: #c8b92f;
+  --bg-btn-card-hover: #b5a31c;
 }
 
 body {
