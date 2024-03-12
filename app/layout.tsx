@@ -19,7 +19,7 @@ export default function RootLayout({
   return (
     <html lang='en'>
       <body className={inter.className}>
-        <main className='max-w-screen-md mx-auto flex flex-col gap-8 h-screen pb-10'>
+        <main className='max-w-screen-md mx-auto flex flex-col gap-8 h-screen pb-10 max-md:px-4'>
           <NavBar />
           {children}
         </main>
