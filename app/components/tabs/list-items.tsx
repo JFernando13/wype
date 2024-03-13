@@ -3,6 +3,7 @@ import { RightArrowIcon, DownArrowIcon } from '@/components/icons'
 import { CardItem } from './card-item'
 
 import { useState } from 'react'
+import type { TItem } from './types'
 
 export interface ListItemsProps {
   content: {

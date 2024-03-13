@@ -1,3 +1,4 @@
+import type { TItem } from '@/components/tabs/types'
 export interface TTab {
   id: string
   name: string

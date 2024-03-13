@@ -13,12 +13,9 @@ export function CurrentTab() {
   const tab = searchParams.get('category') ?? 'all'
   const [currentTab, setCurrentTab] = useState<TTab>(tabs[0])
 
-  useEffect(
-    (effect) => {
-      setCurrentTab(tabs.find(({ name }) => name === tab) ?? tabs[1])
-    },
-    [tabs, tab]
-  )
+  useEffect(() => {
+    setCurrentTab(tabs.find(({ name }) => name === tab) ?? tabs[1])
+  }, [tabs, tab])
 
   return (
     <section className='flex flex-col gap-6'>

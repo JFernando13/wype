@@ -15,15 +15,18 @@ export const useCompleted = create<State & Actions>((set) => ({
   addToCompleted: (item) => {
     // Encontrar la pestaña correspondiente
 
-    const currentTab = tabs.find((tab) =>
-      tab.content.some((content) => content.items.some((i) => i.id === item.id))
-    )
+    const currentTab =
+      tabs.find((tab) =>
+        tab.content.some((content) =>
+          content.items.some((i) => i.id === item.id)
+        )
+      ) ?? ({} as TTab)
 
-    const currentSection = currentTab.content.find((content) =>
+    const currentSection = currentTab?.content.find((content) =>
       content.items.some((i) => item.id === i.id)
     )
 
-    const destinySection = currentTab.content.find((content) =>
+    const destinySection = currentTab?.content.find((content) =>
       content.items.every((i) => item.id !== i.id)
     )
 
