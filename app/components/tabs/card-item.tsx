@@ -1,4 +1,4 @@
-import type { TItem, CardItemProps } from '@/components/tabs/types'
+import type { CardItemProps } from '@/components/tabs/types'
 import { NotesIcon, FlagIcon } from '@/components/icons'
 import { useCompleted } from '@/store/useCompleted'
 
