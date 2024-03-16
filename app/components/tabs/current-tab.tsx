@@ -1,6 +1,6 @@
 'use client'
 
-import type { CurrentTabProps, TTab } from '@/components/tabs/types'
+import type { TTab } from '@/components/tabs/types'
 import { ListItems } from './list-items'
 import { useSearchParams } from 'next/navigation'
 import { useEffect, useState } from 'react'

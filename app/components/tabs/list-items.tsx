@@ -13,14 +13,14 @@ export interface ListItemsProps {
 }
 
 export function ListItems({ content }: ListItemsProps) {
-  const [isOpen, setIsOpen] = useState(false)
+  const [isOpen, setIsOpen] = useState(content.items.length > 0)
 
   return (
     <section
       key={content.name}
       className='flex flex-col gap-4'>
       <h2
-        className='font-semibold text-xl px-4 py-2 hover:bg-[var(--primary-hover)] w-fit rounded-lg transition-colors cursor-pointer flex gap-2 items-center'
+        className='font-semibold text-xl px-4 py-2 hover:bg-[var(--primary-hover)] w-fit rounded-lg transition-colors cursor-pointer flex gap-2 items-center h-fit'
         onClick={() => content.items.length > 0 && setIsOpen(!isOpen)}>
         <span>
           {isOpen && content.items.length > 0 ? (
