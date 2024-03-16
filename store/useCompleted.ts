@@ -7,6 +7,7 @@ type State = {
 }
 
 type Actions = {
+  // eslint-disable-next-line no-unused-vars
   addToCompleted: (item: TItem) => void
 }
 
