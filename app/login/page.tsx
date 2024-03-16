@@ -1,3 +1,13 @@
+import { BtnLogin } from '@/components/buttons'
+import { GoogleIcon } from '../components/icons/google'
+
 export default function LoginPage() {
-  return <h1 className='text-4xl font-black'>Upcoming...</h1>
+  return (
+    <section className='flex flex-col gap-4'>
+      <BtnLogin>
+        <GoogleIcon />
+        <span>sign in with google</span>
+      </BtnLogin>
+    </section>
+  )
 }
